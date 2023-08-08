@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: backend-quality-dashboard-lzor
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/e2e-demos-qazp-tenant/mc-quality-dashboard/backend-quality-dashboard-lzor@sha256:47c6a5b6ae32ff8c00b4ffbd559130519b42bec0e63cfed92f69f3406d946940
+        name: container-image
+        resources: {}
+status: {}
